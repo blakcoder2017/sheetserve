@@ -6,15 +6,11 @@ const { distinctValues } = require('../utils/distinctValues');
 const { checkData } = require('../utils/checkData');
 
 
+
 exports.getAllData = catchAsync(async (req, res) => {
   const response = await sheetdb.get('/')
   
-  // axios.get('https://sheetdb.io/api/v1/fnwm759rc7klx', {
-  //   headers: {
-  //     'Authorization': `Bearer ${process.env.SHEETDB_TOKEN}`,
-  //     'Content-Type': 'application/json'
-  //   }
-  // });
+ç
 
   res.status(200).json({
     status: 'success',

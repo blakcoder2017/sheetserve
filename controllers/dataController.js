@@ -9,9 +9,6 @@ const { checkData } = require('../utils/checkData');
 
 exports.getAllData = catchAsync(async (req, res) => {
   const response = await sheetdb.get('/')
-  
-ç
-
   res.status(200).json({
     status: 'success',
     data: response.data
